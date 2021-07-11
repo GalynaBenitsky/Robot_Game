@@ -23,7 +23,7 @@ const Timer: React.SFC<TimerProps> = ({ timeout, state }) => {
   };
 
   useEffect(() => {
-    if (time < 1) timeout(60);
+    if (time < 1) timeout(1);
   }, [time]);
 
   useEffect(() => {
